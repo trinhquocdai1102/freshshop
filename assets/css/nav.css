@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root {
+    --clr: red;
+    --navHeight: 70px;
+    --textclr: #000;
+    --hoverclr: #ccc;
+    --footerfont: 14px;
+}
+
+.menu__clickActive {
+    color: red !important;
+}
+
+body {
+    position: relative;
+}
+
+/* Begin: Header CSS */
+#header {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: var(--navHeight);
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+#header__navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    height: var(--navHeight);
+}
+
+#header__navbar ul ul {
+    display:block;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    line-height: 69px;
+}
+
+
+#header__navbar ul ul li a {
+    padding: 2% 2% 1%;
+}
+
+#header__navbar ul li img { 
+    width: clamp(50px, 10vw, 60px);
+}
+
+#header__navbar > ul > li{
+    margin: 0 2%;
+}
+
+#header__navbar > ul:first-child {
+    margin: 0;
+}
+
+#header__navbar ul li a {
+    text-decoration: none;
+    color: var(--textclr);
+    padding: 6px 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#mobile__navbar {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    height: var(--navHeight);
+}
+
+#mobile__navbar:hover {
+    background: #fff;
+    border-bottom: 1px solid #000;
+}
+
+#mobile__navbar ul {
+    display: flex;
+    justify-content: left;
+    gap: clamp(30px, 14%, 100px);
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+
+#mobile__navbar ul li img {
+    width: 70px;
+}
+
+#mobile__navbar li a {
+    padding: 8px 16px 2px;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--textclr);
+    vertical-align: middle;
+}
+
+#mobile__navbar li:nth-child(1) a {
+    font-size: 32px;
+}
+
+#mobile__navbar li:nth-child(2) a {
+    padding: 0;
+}
+
+#mobile__navbar li:nth-child(2) a:hover,
+#header__navbar > ul > li:nth-child(1) a:hover {
+    opacity: 1;
+}
+
+#mobile__navbar li a:hover,
+#header__navbar li a:hover {
+    opacity: .5;
+    border-radius: 2px;
+}
+
+#mobile__navbar li a:hover ion-icon,
+#header__navbar li a:hover ion-icon  {
+    transform: scale(1.4);
+
+}
+
+
+/* End: Header CSS */
+
+
+
+
+
+
+/* Begin: Mobile Responsive CSS */
+@media (max-width: 739px) {
+    /* Header Mobile CSS */
+    #header__navbar {
+        display: none !important;
+    }
+
+    #header__navbar ul:first-child {
+        display: none !important;
+    }
+
+}
+/* End: Mobile Responsive CSS */
+
+
+/* Begin: Mobile & Tablet Responsive CSS */
+@media (max-width: 820px) {
+    /* Header CSS */
+    #header__navbar ul > li img{
+        display: none !important;
+    }
+
+}
+/* End: PC & Tablet Responsive CSS */
+
+
+/* Begin: PC & Tablet Responsive CSS */
+@media (min-width: 740px) {
+    /* Header PC CSS */
+    #mobile__navbar {
+        display: none;
+    }
+
+}
+/* End: PC & Tablet Responsive CSS */

@@ -1,0 +1,159 @@
+body {
+    position: relative;
+    background: url('../img/bg/bg-login.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#content{
+    text-align: left;
+    z-index: 999;
+    margin: 2% 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center !important;
+}
+
+.content__login {
+    width: 500px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: auto;
+    padding: 55px;
+}
+
+.content__input {
+    position: relative;
+}
+
+
+.content__list {
+    margin: 32px 0 0;
+}
+
+.content__list input {
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    width: 100%;
+    height: 52px;
+    padding-left: 36px;
+    opacity: 0.5;
+}
+
+.content__list input:hoverr {
+    cursor: pointer;
+}
+
+.content__forgotPass {
+    text-align: right;
+}
+
+.content__forgotPass a:hover {
+    opacity: 0.5;
+}
+
+.content__list ion-icon {
+    position: absolute;
+    display: flex;
+    font-size: 24px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.divLogin {
+    margin: 32px 0;
+}
+
+@keyframes btnLoginChangeBackground {
+    from {
+        opacity: 0.6;
+        background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+    }
+    to {
+        opacity: 1;
+        background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+    }
+}
+
+.btnLogin {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 2% auto;
+    background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
+    color: #fff;
+    border-radius: 40px;
+    line-height: 52px;
+    font-size: 16px;
+    text-transform: uppercase;
+    /* transition: background .6s ease-in; */
+}
+
+.btnLogin:hover {
+    animation: btnLoginChangeBackground 1s ease-in;
+    background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+}
+
+.loginWithOther {
+    text-align: center;
+    margin: 50px 0 60px;
+}
+
+.loginWithOther h4,
+.loginWithSignUp h4  {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.loginWithOther ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 4% 0;
+    font-size: 40px;
+}
+
+.loginWithOther ul li {
+    list-style: none;
+}
+
+.loginWithOther ul li a:hover ion-icon,
+.goHome a:hover ion-icon {
+    transform: scale(1.2);
+}
+
+.loginWithSignUp {
+    text-align: center;
+}
+
+.loginWithSignUp a:hover,
+.loginWithOther a:hover,
+.goHome a:hover {
+    opacity: 0.5;
+}
+
+
+.goHome {
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+@media (max-width: 739px) {
+    .content__login {
+        width: 100%;
+        padding: 12%;
+    }
+}
+
+

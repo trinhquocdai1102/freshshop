@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables</title>
+    <link rel="icon" href="assets/img/icon page/vegetable.jpg">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/pagination.css">
+    <link rel="stylesheet" href="assets/css/commonResponsive.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <!-- Begin: Header -->
+    <div id="header">
+        <nav id="header__navbar">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="assets/img/logo/logo.jpg" alt="logo"></a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="flower.html" id="flowersPage">Flowers</a>
+                        <a href="fruit.html" id="fruitPage">Fruits</a>
+                        <a href="#" id="vegetablesPage">Vegetables</a>
+                        <a href="sale.html" id="salePage">Sale</a>
+                        <a href="contact.html" id="contactPage">Contact</a>
+                    </li>
+                </ul>
+                <li><a class="searchBtn" href="#"><ion-icon name="search-outline"></ion-icon></a></li>
+                <li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+                <li><a href="user.html" target="_blank"><ion-icon name="person-circle-outline"></ion-icon></a></li>
+            </ul>
+        </nav>
+        <nav id="mobile__navbar">
+            <ul>
+                <li><a class="open__menu" href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
+                <li><a class="searchBtn" href="#"><ion-icon name="search-outline"></ion-icon></a></li>
+                <li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+                <li><a href="user.html" target="_blank"><ion-icon name="person-circle-outline"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End: Header -->
+
+    <!-- Begin: Modal -->
+    <!-- Search -->
+    <div class="modal__menuMobile">
+        <ul class="modal__containerMobile">
+            <li><a href="flower.html">Flowers</a></li>
+            <li><a href="fruit.html">Fruits</a></li>
+            <li><a href="#">Vegetables</a></li>
+            <li><a href="sale.html">Sale</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div> 
+    <!-- Mobile Menu -->
+    <div class="modal__search">
+        <div class="modal__containerSearch">
+            <div class="modal__closeSearch"><ion-icon name="close-outline"></ion-icon></div>
+            <div class="modal__title">
+                <p>Welcome to Fresh Shop.</p>
+                <img src="assets/img/logo/logo.jpg" alt="modal logo">
+            </div>
+            <div class="modal__content">
+                <div class="modal__ask">
+                    <p>Ask us some questions</p>
+                    <p>Send us question and we'll find an anwer for you.</p>
+                    <p><a href="">fresh@shop.co</a></p>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search">
+                    <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <div class="modal__social">
+                    <a href="https://www.facebook.com/dai.2407/" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </div>
+
+                <div class="modal__social">
+                    <a href="https://www.youtube.com/channel/UCU2PacFf99vhb3hNiYDmxww" target="_blank">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Modal -->
+
+    <!-- Begin: Content -->
+    <div id="content">
+        <ul class="content__direct">
+            <li><a href="index.html">Home</a></li><span>→</span>
+            <li><a href="flower.html">Vegetables</a></li><span>→</span>
+            <li><a href="#">New Vegetables</a></li>
+        </ul>
+        <div class="content__product">
+            <div class="content__left">
+                <div class="content__brand brand1">
+                    <div class="brand__title"><a href="#">Flowers</a></div>
+                    <ul class="menu__list">
+                        <li><a href="#">Rose</a></li>
+                        <li><a href="#">Hydrangea</a></li>
+                        <li><a href="#">Bleeding-heart</a></li>
+                        <li><a href="#">Cherry blossom</a></li>
+                        <li><a href="#">Orchid</a></li>
+                        <li><a href="#">Tulip</a></li>
+                        <li><a href="#">Peony</a></li>
+                        <li><a href="#">Lily</a></li>
+                    </ul>
+                </div>
+                <div class="content__brand brand2">
+                    <div class="brand__title"><a href="#">Fruits</a></div>
+                    <ul class="menu__list">
+                        <li><a href="#">Apples</a></li>
+                        <li><a href="#">Blueberries</a></li>
+                        <li><a href="#">Bananas</a></li>
+                        <li><a href="#">Oranges</a></li>
+                        <li><a href="#">Dragon fruit</a></li>
+                        <li><a href="#">Mango</a></li>
+                        <li><a href="#">Avocado</a></li>
+                        <li><a href="#">Lychee</a></li>
+                    </ul>
+                </div>
+                <div class="content__brand brand3">
+                    <div class="brand__title"><a href="#">Vegetables</a></div>
+                    <ul class="menu__list open__leftMenu">
+                        <li><a href="#">Spinach</a></li>
+                        <li><a href="#">Carrots</a></li>
+                        <li><a href="#">Broccoli</a></li>
+                        <li><a href="#">Brussel Sprouts</a></li>
+                        <li><a href="#">Sweet Potatoes</a></li>
+                        <li><a href="#">Mushrooms</a></li>
+                        <li><a href="#">Asparagus</a></li>
+                        <li><a href="#">Beets</a></li>
+                    </ul>
+                </div>
+                <div class="content__brand brand4">
+                    <div class="brand__title"><a href="#">Sale</a></div>
+                    <ul class="menu__list">
+                        <li><a href="#">Sale ALL</a></li>
+                        <li><a href="#">Flowers on SALE</a></li>
+                        <li><a href="#">Fruits on SALE</a></li>
+                        <li><a href="#">Vegetables on SALE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content__center">
+                <div class="box__sort">
+                    <div class="center__title"><a href="#">New Vegetables</a></div>
+                    <ul class="box__list">
+                        <li><span>Filter</span><ion-icon name="caret-down-outline"></ion-icon></li>
+                        <li>
+                            <select name="Sort">
+                                <option>Sort<ion-icon name="caret-down-outline"></ion-icon></option>
+                                <option><a href="#">Newest</a></option>
+                                <option><a href="#">Hot</a></option>
+                                <option><a href="#">Sale</a></option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="brand__sort">
+                    <div class="sort__list">
+                        <p>Origin</p>
+                        <ul class="origin__list">
+                            <li><a href="#">USA</a></li>
+                            <li><a href="#">Japan</a></li>
+                            <li><a href="#">England</a></li>
+                            <li><a href="#">Vietnam</a></li>
+                            <li><a href="#">Korea</a></li>
+                            <li><a href="#">Singapore</a></li>
+                            <li><a href="#">Thailand</a></li>
+                            <li><a href="#">Russia</a></li>
+                        </ul>
+                    </div>
+                    <ul class="sort__list sort__boxCheck">
+                        <li>
+                            <p>Hot</p>
+                            <input type="checkbox">
+                        </li>
+                        <li>
+                            <p>New</p>
+                            <input type="checkbox">
+                        </li>
+                        <li>
+                            <p>In stock</p>
+                            <input type="checkbox">
+                        </li>
+                    </ul>
+                    <div class="sort__submit">Check</div>
+                </div>
+                <div class="content__main">
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__image"><a href="#"><img src="assets/img/pages/vegetables/vegetable1.jpg" alt="vegetable1"></a></div>
+                        <div class="product__desc"><a href="#">Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable Vegetable </a> </div>
+                        <div class="product__price">10$</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <ul>
+                <li><span><ion-icon name="chevron-back-outline"></ion-icon></span></li>
+                <li><span class="active">1</span></li>
+                <li><span>2</span></li>
+                <li><span>3</span></li>
+                <li><span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End: Content -->
+
+
+
+    <!-- Begin: Footer -->
+    <div id="footer">
+        <div class="footer__above">
+            <p>Get information about Fresh Shop</p>
+            <input type="text" placeholder="Input your email"><a href="#"><ion-icon name="return-up-back-outline"></ion-icon></a>
+        </div>
+        <ul class="footer__center">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Recruit</a></li>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+        <div class="footer__below">
+            <p>Address: No. 1 Dai Co Viet, Hai Ba Trung District, Hanoi</p>
+            <p>Order online: 0329 711 504</p>
+        </div>
+        <div class="copy__right">&copy; FreshShop All rights reserved</div>
+    </div>
+    <!-- End: Footer -->
+   
+
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/product.js"></script>
+</body>
+</html>

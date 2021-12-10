@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+ion-icon{
+    vertical-align: middle;
+}
+
+:root {
+    --clr: red;
+    --navHeight: 70px;
+    --textclr: #000;
+    --hoverclr: #ccc;
+    --footerfont: 14px;
+}
+
+body {
+    position: relative;
+}
+
+#header {
+    padding: 0;
+}
+
+/* Begin: Content CSS */
+#content {
+    padding: 0;
+}
+
+#content img {
+    width: 100%;
+    height: auto;
+}
+/* End: Content CSS */
+
+
+

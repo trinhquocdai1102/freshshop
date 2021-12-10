@@ -1,0 +1,37 @@
+:root {
+    --btnWidth: 34px
+}
+
+.pagination {
+    margin: 3% 0 0 ;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    list-style: none;
+}
+
+.pagination ul li {
+    width: var(--btnWidth);
+    height: calc(var(--btnWidth) + 3px);
+    text-align: center;
+}
+
+.pagination ul li span {
+    display: block;
+    width: var(--btnWidth);
+    border: 1px solid #000;
+    line-height: var(--btnWidth);
+}
+
+
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover{
+  color: #000;
+  background: #ccc;
+  cursor: pointer;
+}

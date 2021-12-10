@@ -1,0 +1,54 @@
+/* Begin: PC Responsive CSS */
+@media (min-width: 1024px) {
+    /* Content Mobile CSS */
+    #content {
+        padding: 0 10%;
+    }
+    /* Footer Mobile CSS */
+}
+/* End: PC Responsive CSS */
+
+
+/* Begin: Tablet Responsive CSS */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* Content Mobile CSS */
+
+    /* Footer Mobile CSS */
+}
+/* End: Tablet Responsive CSS */
+
+
+/* Begin: Mobile Responsive CSS */
+@media (max-width: 739px) {
+    /* Content Mobile CSS */
+    .content__left {
+        display: none;
+    }
+    /* Footer Mobile CSS */
+
+}
+/* End: Mobile Responsive CSS */
+
+
+
+/* Begin: PC & Tablet Responsive CSS */
+@media (min-width: 740px) {
+    /* Content Mobile CSS */
+
+    /* Footer Mobile CSS */
+}
+/* End: PC & Tablet Responsive CSS */
+
+
+
+/* Begin: Mobile & Tablet Responsive CSS */
+@media (max-width: 1023px) {
+    /* Header Mobile CSS */
+    #header {
+        padding: 0;
+    }
+    /* Content Mobile CSS */
+
+    /* Footer Mobile CSS */
+}
+/* End: Mobile & Tablet Responsive CSS */

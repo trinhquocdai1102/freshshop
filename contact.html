@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="assets/img/icon page/contact.jpg">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/pagination.css">
+    <link rel="stylesheet" href="assets/css/commonResponsive.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <!-- Begin: Header -->
+    <div id="header">
+        <nav id="header__navbar">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="assets/img/logo/logo.jpg" alt="logo"></a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="flower.html" id="flowersPage">Flowers</a>
+                        <a href="fruit.html" id="fruitPage">Fruits</a>
+                        <a href="vegetable.html" id="vegetablesPage">Vegetables</a>
+                        <a href="sale.html" id="salePage">Sale</a>
+                        <a href="#" id="contactPage">Contact</a>
+                    </li>
+                </ul>
+                <li><a class="searchBtn" href="#"><ion-icon name="search-outline"></ion-icon></a></li>
+                <li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+                <li><a href="user.html" target="_blank"><ion-icon name="person-circle-outline"></ion-icon></a></li>
+            </ul>
+        </nav>
+        <nav id="mobile__navbar">
+            <ul>
+                <li><a class="open__menu" href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
+                <li><a class="searchBtn" href="#"><ion-icon name="search-outline"></ion-icon></a></li>
+                <li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+                <li><a href="user.html" target="_blank"><ion-icon name="person-circle-outline"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End: Header -->
+
+    <!-- Begin: Modal -->
+    <!-- Search -->
+    <div class="modal__menuMobile">
+        <ul class="modal__containerMobile">
+            <li><a href="flower.html">Flowers</a></li>
+            <li><a href="fruit.html">Fruits</a></li>
+            <li><a href="vegetable.html">Vegetables</a></li>
+            <li><a href="sale.html">Sale</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div> 
+    <!-- Mobile Menu -->
+    <div class="modal__search">
+        <div class="modal__containerSearch">
+            <div class="modal__closeSearch"><ion-icon name="close-outline"></ion-icon></div>
+            <div class="modal__title">
+                <p>Welcome to Fresh Shop.</p>
+                <img src="assets/img/logo/logo.jpg" alt="modal logo">
+            </div>
+            <div class="modal__content">
+                <div class="modal__ask">
+                    <p>Ask us some questions</p>
+                    <p>Send us question and we'll find an anwer for you.</p>
+                    <p><a href="">fresh@shop.co</a></p>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search">
+                    <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <div class="modal__social">
+                    <a href="https://www.facebook.com/dai.2407/" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </div>
+
+                <div class="modal__social">
+                    <a href="https://www.youtube.com/channel/UCU2PacFf99vhb3hNiYDmxww" target="_blank">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Modal -->
+
+    <!-- Begin: Content -->
+    <div id="content">
+        <ul class="content__direct">
+            <li><a href="index.html">Home</a></li><span>→</span>
+            <li><a href="flower.html">Contact</a></li><span>→</span>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="content__header">
+            <h2>Contact us</h2>
+            <p>We love questions and feedback - and we're always happy to help!</p>
+            <p>Here are some ways to contact us.</p>
+        </div>
+        <div class="content__contact">
+            <div class="contact__center">
+                <div class="contact__title">
+                    <h3>Send us message</h3>
+                    <p>Send us a message and we'll respond within 24 hours.</p>
+                </div>
+                <div class="contact__main">
+                    <div class="contact__input"><p>Full Name</p><input type="text" placeholder="Type full name here"></div>
+                    <div class="contact__input"><p>Email</p><input type="text" placeholder="Type email here"></div>
+                    <div class="contact__input"><p>Telephone</p><input type="text" placeholder="Phone number"></div>
+                    <div class="contact__input"><p>Topic</p><input type="text" placeholder="Type the topic here"></div>
+                    <div class="contact__input"><p>Message</p><textarea id="w3review" name="w3review" rows="4" cols="40" placeholder="Type our message here"></textarea></div>
+                </div>
+                <a id="btnSubmit" href="#">Submit</a>
+            </div>
+            <div class="contact__right">
+                <div class="contact__title">
+                    <h3>Contact information</h3>
+                </div>
+                <div class="contact__main">
+                    <ul>
+                        <li><ion-icon name="map-outline"></ion-icon><span>No. 1 Dai Co Viet, Hai Ba Trung District, Hanoi</span></li>
+                        <li><ion-icon name="mail-outline"></ion-icon><span>fresh@shop.co</span></li>
+                        <li><ion-icon name="call-outline"></ion-icon><span>0329 711 504</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Content -->
+
+
+
+    <!-- Begin: Footer -->
+    <div id="footer">
+        <div class="footer__above">
+            <p>Get information about Fresh Shop</p>
+            <input type="text" placeholder="Input your email"><a href="#"><ion-icon name="return-up-back-outline"></ion-icon></a>
+        </div>
+        <ul class="footer__center">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Recruit</a></li>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+        <div class="footer__below">
+            <p>Address: No. 1 Dai Co Viet, Hai Ba Trung District, Hanoi</p>
+            <p>Order online: 0329 711 504</p>
+        </div>
+        <div class="copy__right">&copy; FreshShop All rights reserved</div>
+    </div>
+    <!-- End: Footer -->
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

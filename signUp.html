@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="assets/img/icon page/user.jpg">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/commonResponsive.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <style>
+        .content__direct {
+            margin: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <ul class="content__direct">
+            <li><a href="index.html">Home</a></li><span>→</span>
+            <li><a href="user.html">Sign up</a></li><span>
+        </ul>
+        <div class="content__login">
+            <h1>Login</h1>
+            <div>
+                <div class="content__list">
+                    <p>Username</p>
+                    <div class="content__input">
+                        <input type="text" placeholder="Type your username">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="content__list">
+                    <p>Password</p>
+                    <div class="content__input">
+                        <input type="password" placeholder="Type your password">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="content__list">
+                    <p>Confirm Password</p>
+                    <div class="content__input">
+                        <input type="password" placeholder="Confirm your password">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="content__list">
+                    <p>Email</p>
+                    <div class="content__input">
+                        <input type="email" placeholder="Type your email">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="content__forgotPass"><a href="user.html">Already have account?</a></div>
+            </div>
+            <div class="divLogin">
+                <a class="btnLogin" href="#">SIGN UP</a>
+            </div>
+            <div class="goHome"><a href="index.html"><ion-icon name="home-outline"></ion-icon></a></div>
+        </div>
+    </div>
+
+
+
+
+    
+    <script>
+        const changeInputs = document.querySelectorAll(".content__input input");
+        for(let i = 0; i < changeInputs.length; i++){
+            changeInputs[i].addEventListener("focus", function(){
+                changeInputs[i].style.opacity = "1";
+            });
+            changeInputs[i].addEventListener("blur", function(){
+                changeInputs[i].style.opacity = "0.5";
+            });
+        }
+    </script>
+
+</body>
+</html>
